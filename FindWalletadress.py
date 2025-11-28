@@ -2,6 +2,9 @@
 # Then we need to convert it to bytes and then use SECP256k1 curve to calculate the public key
 # with the public key we can use the keccak256 algorithm to get the wallet address 
 
+
+# use an .env file and store your private key as PRIVATE_KEY
+
 import os
 from dotenv import load_dotenv
 from ecdsa import SigningKey, SECP256k1
